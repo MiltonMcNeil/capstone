@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock %}
+
+{% block header %}
+    <h1>Create Your Drink Here</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="col-12">
+        <div class="card mt-3">
+            <div class="card-body">
+                <form action="" method="post">
+                    {{ form.csrf_token }}
+
+                    {{ form.drink_name.label }}
+                    {{ form.drink_name(class='form-control', placeholder='Enter Name of Cocktail') }}
+
+                    
+
+                    {{ form.instructions.label }}
+                    {{ form.instructions(class='form-control', placeholder='Enter Recipe Instructions') }}
+
+                    {{ form.image_url.label }}
+                    {{ form.image_url(class='form-control', placeholder='Enter Image URL')}}
+
+                    {{ form.drink_type(class='form-check-input') }}
+                    {{ form.drink_type.label }}
+
+                    {{ form.submit(class='btn btn-outline-primary mt-3 w-100') }}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

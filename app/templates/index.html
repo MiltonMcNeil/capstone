@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block header %}
+
+<h1>The Collection</h1>
+
+{% endblock %}
+
+{% block content %}
+    {% for d in data %}
+        <div class="col-2 color-white">
+            <img class="homeImages"src="{{ d['strDrinkThumb']}}" alt="A cocktail">
+        </div>
+    {% endfor %}
+{% endblock %}

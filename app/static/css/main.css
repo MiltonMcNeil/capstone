@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(242, 245, 246);
+    color: rgb(21, 8, 8);
+}
+
+
+
+.myNavbar {
+    background-color:  rgb(38, 38, 38) !important;
+    color: rgb(80, 27, 27);
+    height: 200px;
+}
+
+.navbar-brand, .nav-link, .navbar {
+    color: rgb(213, 213, 213) !important;
+}
+
+.homeImages {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+}
+
+
+.btn-2 {
+    letter-spacing: 0;
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    color: #efe8e8;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#224d3e, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #0d3135ef;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 50%;
+}
+
+.cocktailViewImg {
+    height: 200px;
+    width: 200px;
+    width: 50%;
+}
