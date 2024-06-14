@@ -45,5 +45,5 @@ class DrinkForm(FlaskForm):
     measure_10 = StringField('Measure #10')
     instructions = TextAreaField('Recipe Instructions', validators=[InputRequired()])
     image_url = StringField('Image URL', validators=[InputRequired()])
-    drink_type = BooleanField('Is this an Alcholic Cocktail? (Uncheck if Non-Alcoholic)', validators=[InputRequired()], default='True')
+    drink_type = BooleanField('Alcholic? (Uncheck if Not)', validators=[InputRequired()], default='True')
     submit = SubmitField('Create Drink')
